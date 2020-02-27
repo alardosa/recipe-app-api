@@ -5,7 +5,7 @@ Any questions? Let's talk in [LinkeDin](https://www.linkedin.com/in/alardosa/)
 
 The course teaches how to build a fully functioning REST API using:
 
- - Python 3
+ - Python
  - Django / Django-REST-Framework
  - Docker / Docker-Compose
  - Test Driven Development
