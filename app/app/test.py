@@ -1,10 +1,6 @@
-from django.test import TestCase
+from math import pi
 
-from app.calc import add
-
-
-class CalcTests(TestCase):
-
-    def test_add_numbers(self):
-        """Test that values are added together"""
-        self.assertEqual(add(3, 8), 11)
+# Note that in the above example,  
+# we used math.pi. Here we have used 
+# pi directly. 
+print(pi) 
