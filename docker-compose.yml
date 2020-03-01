@@ -3,6 +3,8 @@ version: '3'
 services:
  app:
    user: $USERID:$GID
+   env_file:
+     - variables.env
    build:
      context: .
    ports:
