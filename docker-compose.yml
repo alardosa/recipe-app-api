@@ -1,13 +1,16 @@
 version: '3'
 
 services:
- app:
-   user: $USERID:$GID
-   build:
-     context: .
-   ports:
-     - "8000:8000"
-   volumes:
-     - ./app:/app:Z
-   command: >
-     sh -c "python manage.py runserver 0.0.0.0:8000"
+  scan:
+    env_file:
+      - variables.env
+  app:
+    user: $USERID:$GID
+    build:
+      context: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app:Z
+    command: >
+      sh -c "python manage.py runserver 0.0.0.0:8000"
