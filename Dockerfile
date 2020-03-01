@@ -2,8 +2,6 @@ FROM python:3.7-alpine
 MAINTAINER Al Ardosa.
 
 ENV PYTHONUNBUFFERED 1
-ENV USERID=1
-ENV GID=2
 
 # Install dependencies
 COPY ./requirements.txt /requirements.txt
