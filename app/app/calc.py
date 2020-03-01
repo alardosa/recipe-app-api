@@ -1,4 +1,4 @@
-def add_function(x, y):
+def add(x, y):
     """Add two numbers together and return the result"""
     return x + y
 
