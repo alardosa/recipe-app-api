@@ -1,9 +1,8 @@
 version: '3'
 
 services:
-  scan:
-    env_file:
-      - variables.env
+  web:
+    env_file: variables.env
   app:
     user: $USERID:$GID
     build:
