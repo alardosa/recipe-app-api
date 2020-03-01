@@ -1,8 +1,10 @@
-import random
-import math
+from django.test import TestCase
+
+from app.calc import add
 
 
-for i in range(5):
-    print(random.randint(1, 25))
+class CalcTests(TestCase):
 
-print(math.pi)
+    def test_add_numbers(self):
+        """Test that values are added together"""
+        self.assertEqual(add(3, 8), 11)
