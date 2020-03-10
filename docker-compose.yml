@@ -2,9 +2,6 @@ version: '3'
 
 services:
   app:
-#    user:
-#      UID=1
-#      GID=2
     build:
       context: .
     ports:
